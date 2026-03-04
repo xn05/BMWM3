@@ -1,4 +1,4 @@
-# BMW M3 Sedan (Dream car task)
+# BMW M3 Sedan
 
 - Webpage features:
 - Zoomable main image
