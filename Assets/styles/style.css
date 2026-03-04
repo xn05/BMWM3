@@ -1,0 +1,155 @@
+@font-face {
+    font-family: "BMWTypeNext Pro";
+    src: url("../fonts/8503adf008ebf781c6342c58254552e4.eot");
+    src: url("../fonts/8503adf008ebf781c6342c58254552e4.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/8503adf008ebf781c6342c58254552e4.woff2")format("woff2"),
+    url("../fonts/8503adf008ebf781c6342c58254552e4.woff")format("woff"),
+    url("../fonts/8503adf008ebf781c6342c58254552e4.ttf")format("truetype"),
+    url("../fonts/8503adf008ebf781c6342c58254552e4.svg#BMWTypeNext Pro")format("svg"),
+    url("../fonts/BMWTypeNext Pro.ttf")format("truetype");
+}
+:root {
+    --topnav-height: 72px;
+    --footer-height: 60px;
+}
+body {
+    font-family: "BMWTypeNext Pro";
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    user-select: none;
+    cursor: url("Assets/cursor/bmw.cur"), auto;
+}
+.split {
+    height: var(--footer-height);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    background-color: white;
+}
+.footer_centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.main_split {
+    display: flex;
+    gap: 0;
+    height: calc(100vh - var(--topnav-height) - var(--footer-height));
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.main_left {
+    flex: 4;
+    padding: 20px;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+}
+.main_right {
+    flex: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    overflow-y: auto;
+    max-height: calc(100vh - var(--topnav-height) - var(--footer-height));
+}
+.footer_left {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    text-align: left;
+}
+.topnav {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+    height: var(--topnav-height);
+    box-sizing: border-box;
+}
+.topnav a {
+    color: black;
+    text-align: center;
+    padding: 24px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.nav-divider {
+    width: 0px;
+    height: 30px;
+    border: 1px solid #ccc;
+    margin: 0 8px;
+    flex-shrink: 0;
+}
+#m3 {
+    max-height: 597px;
+    user-select: none;
+    max-width: 100%;
+    height: auto;
+    transform-origin: center center;
+    transition: transform 120ms ease-out;
+    display: block;
+}
+.image-hint {
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    pointer-events: none;
+    animation: hint-fade 4s ease-out forwards;
+    z-index: 2;
+}
+
+@keyframes hint-fade {
+    0% { opacity: 1; }
+    70% { opacity: 1; }
+    100% { opacity: 0; }
+}
+.bmw_logo {
+    margin-left: auto;
+    margin-right: 20px;
+    max-height: 45px;
+    user-select: none;
+    display: block;
+}
+.mainright {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.heading-row {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    vertical-align: middle;
+}
+.heading-row .mainright {
+    margin-bottom: 0;
+}
+.heading-logo {
+    height: 26px;
+    width: auto;
+    user-select: none;
+}
+.stathead {
+    font-size: 17px;
+}
+.statdown {
+    font-size: 14px;
+}
