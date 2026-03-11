@@ -20,7 +20,7 @@ body {
     padding: 0;
     overflow: hidden;
     user-select: none;
-    cursor: url("/BMWM3/Assets/cursor/bmw.cur"), auto;
+    cursor: url("../cursor/bmw.cur"), auto;
 }
 .split {
     height: var(--footer-height);
